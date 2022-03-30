@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-/*输出比n小的质数到txt文件*/
+/*锟斤拷锟斤拷锟絥小锟斤拷锟斤拷锟斤拷锟斤拷txt锟侥硷拷*/
 int main() {
 	int i, j, k, n;
 	FILE *fp = fopen("primenumber.txt", "wt+");
@@ -17,7 +17,7 @@ int main() {
 				fprintf(fp, "%20d", i);
 				k++;
 				if (k % 7 == 0)
-					fprintf(fp, "\n"); /*每行7个质数*/
+					fprintf(fp, "\n"); /*每锟斤拷7锟斤拷锟斤拷锟斤拷*/
 			}
 		}
 	} else
@@ -25,6 +25,5 @@ int main() {
 	fclose(fp);
 	fflush(stdin);
 	printf("\nPress any key to exit...");
-	scanf("%c", &n);
 	return 0;
 }
